@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Menu from "./Menu";
 import "../App.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
 function SplashPage() {
 	return (
@@ -36,11 +36,16 @@ function SplashPage() {
 				<Row>
 					<Col>
 						<h1 class='display-4 text-nowrap' style={{ textAlign: "center" }}>
-							Be A Chad!
+							Make Gainz!
 						</h1>
+						<Image 
+							class='justify-content-md-left'
+							src="https://media.giphy.com/media/ADgfsbHcS62Jy/giphy.gif"
+							/>
 					</Col>
 					<Col>
-						<img
+						<Image
+							class='justify-content-md-center'
 							className='splashImg'
 							src='https://media.giphy.com/media/tQ4Ppppmjy3jVS7H2Y/giphy.gif'
 						/>
@@ -50,7 +55,10 @@ function SplashPage() {
 							Don't Get Rekt!
 						</h1>
 					</Col>
-				</Row>
+					
+					</Row>
+				
+				
 			</Container>
 		</>
 	);
